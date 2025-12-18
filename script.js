@@ -114,6 +114,8 @@
 //       consrwd
 // ole.log ("SLOW DOWN");
 // }
+
+
 // Let color = prompt("ENTER YOUR SIGNALS COLOURS");
 // switch (color) {
 //    case "red":
@@ -205,7 +207,92 @@
 // let arr =[1,2,4,5,6,7,8,9,10];
 // let splice = arr.splice(3,5);
 // console.log (splice);
+   
 
-let arr1 = [1,2,3,4,5,6,7,8,9,10];
-let rev = arr1.slice(0,5)
-console.log (rev);
+
+// ########################   LOOPS  ##################################
+
+//////// FOR LOOP //////////
+// =>  A for loop repeats code using initialization, condition, and increment/decrement.
+
+// for (let i = 0; i<=13;i++){
+//     console. log ("saish shaikh 23");
+// }
+
+
+//  Q1)  Print numbers from 1 to 10 using for loop.
+
+
+//   for (let i=1 ; i<=10;i++){
+//     console.log (i);
+//   }
+
+
+//   Q2) Print numbers from 10 to 1 using for loop
+
+//   for (let i=10 ;i>=1;i--){
+//     console.log (i);
+//   }
+
+//   Q3)   Print even numbers from 1 to 50 using for loop.
+
+//   for (let i=1; i<=50 ;i++){
+//     if (i %2 === 0){
+//     console.log (i);
+//   }
+//   }
+  
+//   Q4)   Print odd numbers from 1 to 50 using for loop.
+
+
+//   for (let i=1; i<=50 ;i++){
+//     if (i %2 !== 0){
+//     console.log (i);
+//   }
+//   }
+
+
+   // Q5)  Sum of numbers from 1 to n
+
+// let sum = 0;
+
+// for (let i = 1; i <= 10; i++) {
+//   sum += i;
+// }
+// console.log(sum);
+ 
+// Q6)  Print table of a given number
+  
+// let n = 5;
+// for (let i = 1; i<=10;i++){
+//     console.log (n + " * " + i + " = " + n * i);
+// }
+
+//  ex 2 )
+
+// let n = parseInt(prompt("ENTER YOUR TABLE NO"));
+// for (let i = 1 ; i<10;i++){
+//     console.log (n +"*"+(i) +"="+ (n*i));
+// }
+
+//  Q 7)  Find factorial of a number
+
+// let n = 5;    
+// let fact= 1;  
+
+// for (let i = 1; i <= n; i++) {
+//     fact *= i;    
+// }
+
+
+// console.log(fact); 
+
+ 
+// ex 2)
+
+// let n = parseInt(prompt("ENTER YOUR TABLE NO"));
+// let fact = 1;
+//  for (let i = 1 ; i<=n; i++) {
+//   fact *= i
+//  }  
+//  console.log (fact)
