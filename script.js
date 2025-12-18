@@ -284,7 +284,6 @@
 //     fact *= i;    
 // }
 
-
 // console.log(fact); 
 
  
@@ -296,3 +295,5 @@
 //   fact *= i
 //  }  
 //  console.log (fact)
+
+
