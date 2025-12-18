@@ -139,7 +139,6 @@
 // console.log(index);
 
 
-
 // let msg = "saishshaikhfromsaralgaon";
 // let toUpperCase= msg.toUpperCase();
 // console.log(toUpperCase);
@@ -155,4 +154,58 @@
 //   Nmsg = msg.replace ("saish","sara");
 //  console.log (Nmsg);
 
+//   day 2
 
+// ###############  ARRAY METHODS ####################
+
+// let arr = [1, 2, 3];
+
+// // add to end
+// arr.push(4);
+// console.log(arr); // [1, 2, 3, 4]
+
+// // remove from end
+// arr.pop();
+// console.log(arr); // [1, 2, 3]
+
+// // add to start
+// arr.unshift(0);
+// console.log(arr); // [0, 1, 2, 3]
+
+// // remove from start
+// arr.shift();
+// console.log(arr); // [1, 2, 3]
+
+                // merging 2 arry
+
+// let arr1 = [1,2,3,4,5];
+// let arr2 = [6,7,8,9,10];
+
+// let merge = arr1.concat(arr2)
+// console.log(merge);
+
+//reverse arry
+
+// let arr = [1,2,3,4,5]
+// let rev = arr.reverse(arr)
+// console.log(rev);
+
+//    slice in arry
+
+// let arr =[1,2,4,5,6,7,8,9,10];
+// let slic = arr.slice(0,4);
+// console.log (slic);
+
+// splice in arry 
+
+// let arr =[1,2,4,5,6,7,8,9,10];
+// let splice = arr.splice(0,1);
+// console.log (splice);
+
+// let arr =[1,2,4,5,6,7,8,9,10];
+// let splice = arr.splice(3,5);
+// console.log (splice);
+
+let arr1 = [1,2,3,4,5,6,7,8,9,10];
+let rev = arr1.slice(0,5)
+console.log (rev);
