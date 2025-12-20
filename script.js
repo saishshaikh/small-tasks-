@@ -35,8 +35,12 @@
 // })
 
 
-// JAVSCRIPT RIVISION
+// ############JAVSCRIPT RIVISION#########################
+
+//   If
+
 //  if else
+
 
 
 //  let a= 12 , b = 4
@@ -213,6 +217,7 @@
 // ########################   LOOPS  ##################################
 
 //////// FOR LOOP //////////
+
 // =>  A for loop repeats code using initialization, condition, and increment/decrement.
 
 // for (let i = 0; i<=13;i++){
@@ -296,4 +301,43 @@
 //  }  
 //  console.log (fact)
 
+//////////////////// NESTED FOR LOOP ///////////////////////
 
+// Q1) 
+
+// for (let i=1 ; i<=3 ; i++){
+//    for (j=1;j<=2;j++){
+//       console.log(i,j);
+//    }
+
+// }
+
+// for (let i = 1; i <= 3; i++) {
+//     for (let j = 1; j <= 2; j++) {
+//         console.log("Hi"+i);
+//     }
+// }
+
+
+
+///////////////////for of loop //////////////////////////   
+// note ::=  for…of loop sirf iterable objects (array, string, set, map) ke liye kaam karta hai.
+
+
+// q1) identify the output
+
+// const fruit = ["apple","orange","banan","watermelon"];
+//  for ( const fruits of fruit){
+//    console.log (fruits);
+//  }
+
+
+// Q2)
+
+// let mrks = [1,2,3,4,5,6,7]; // array
+// for (let no of mrks) {
+//     console.log(no);
+// }
+
+
+/////////////// WHILE LOOP //////////////////////////
