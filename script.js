@@ -246,6 +246,18 @@
 //     console.log (i);
 //   }
 //   }
+
+
+// Q)
+// for (let i = 1; i <= 50; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i + " THE NO IS EVEN");
+//   } else {
+//     console.log(i + " THIS IS ODD NUMBER");
+//   }
+// }
+
+
   
 //   Q4)   Print odd numbers from 1 to 50 using for loop.
 
@@ -341,3 +353,179 @@
 
 
 /////////////// WHILE LOOP //////////////////////////
+//  ==> while loop tab tak code execute karta hai jab tak condition true hoti hai.
+
+// Q1) print 1 to 10 using while loop ?
+
+//  let i = 1 ;
+//  while (i<=10) {
+//    console.log (i);
+//    i++;
+//  }
+
+
+// let i = 1;
+// while (i <= 10) {
+//   if (i == 8) {
+//     console.log("8 is fond")
+//   }
+//   console.log(i);
+//   i++;
+// }
+
+// let i = 1;
+// while (i <= 10) {
+//   if (i == 8) {
+//     console.log("8 is fond")
+// //     break;    break in loop stop herre working durring proces
+// //   }
+//   console.log(i);
+//   i++;
+// }
+
+///////////////// do while loop////////////////////////
+
+// while loop condition pehle check karta hai, code may run 0 times.
+
+// do…while loop code pehle execute karta hai, condition ke baad check hoti hai, isliye minimum 1 time run hota hai
+
+
+//   Q1) Print numbers 1 to 5 using do…while loop.
+
+// let i = 1
+// do {
+//    console.log(i)
+//    i++
+// }while(i<=100)
+
+// Q2)
+
+// let password;
+// do {
+//   password = prompt("Enter password:");
+//   console .log ("you are log in successfuly")
+// } while(password !== "admin");
+  
+
+// Q2)calculate the sum of numbers from 1 to 10
+
+// let sum = 0 ;
+// let i = 1;
+// do {
+//    sum+=i
+//   i++
+ 
+// } while ( i<=10)
+//     console.log (sum);
+
+
+////////////////  OBJECT LITERAL ////////////////
+
+// let saish ={
+//    name : "Saish" ,
+//    age : 22 ,
+//    Bloodgroup :" B+",
+//    class : "BE" ,
+//    city : "kalyan"
+// };
+// console.log(saish.name);   
+// console.log(saish.age); 
+
+// // Q2) 
+// let student = { name: "saish", marks: { math: 95, science: 90 } };
+// console.log(student.marks.math);  
+
+
+// 1 )  for indivisual object = saish.jo nikln hai induvisual usk name   ex saish.name 
+   // 2 ) for add = saish.city = "mumbai"
+    // 3) for delete = delete saish.city
+
+
+    //////////////////////////// ////////////////////////  FUNCTION   ////////////////////////////////////////////////////////////
+   //  A function is a block of code that does a specific task. You can use it again and again by calling it.
+   
+   // type 1 =  basic function //
+   // Q1 ) 
+
+   // function hellow () {
+   //    console.log ("hellow !! Saish Shaikh")
+   // }
+   // hellow ();
+
+
+   // type 2 =  Function with Arguments (Without return) //
+
+   // Q1) 
+   
+   // function add (a,b) {
+   //    console.log(a+b);
+   // }
+   //  add (5,3)
+
+
+//    // Q2)
+
+// function multiply (a,b) {
+//    console.log (a*b)
+// }
+
+//     multiply(5,5)
+
+// Q3)  
+// function info (name,age){
+//    console.log("hellow "  + name + " your age is :: " + age );
+// }
+//  info ("saish",22)
+
+
+// Q3  ) adult or not
+
+// function adult(age) {
+//    if (age>=18) {
+//       console.log("YOU ARE ADULT")
+//    } else {
+//       console.log ("YOU ARE NOT ADULT")
+//    }
+// }
+
+// adult(12);
+
+
+// type 2 =  Function with Arguments ( return) //
+
+// Example 1: Add two numbers
+
+// function add (a,b) {
+//    return a+b
+// }
+//  console.log(add(15,10));
+
+
+// Example 2: Check even or odd
+
+// function isEven (num) {
+//    return num %2 === 0;
+// }
+
+// console.log(isEven(2))
+
+// Example 3: Square of a number
+
+//  function square  (num) {
+//    return num*num;
+//  }
+
+//   console.log (square(5))
+
+
+// exaple : 3   adult or not
+
+function adult(age) {
+   if (age>=18) {
+      return("YOU ARE ADULT")
+   } else {
+      return ("YOU ARE NOT ADULT")
+   }
+}
+
+console.log (adult(22))
