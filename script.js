@@ -1,41 +1,6 @@
 
-// let input = document.querySelector("input");
-// let button = document.querySelector("button");
-// let ul = document.querySelector("ul");
-// button.addEventListener( "click" , function(){
-//     let item = document.createElement("li");
-//     item.innerText= input.value;
-//     ul.appendChild(item);
-//     input.value="";
-// })
 
-
-//   let h3 = document.querySelector("h3");
-
-// function changeColor(color, delay) {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             h3.style.color = color;
-//             resolve("color changed");
-//         }, delay);
-//     });
-// }
-// changeColor("red",1000)
-// .then(() => changeColor("blue",1000))
-// .then(() => changeColor("yellow",1000))
-
-// let url ="https://jsonplaceholder.typicode.com/posts/1";
-// fetch(url)
-// .then( (Response) => {
-//     console.log(Response);
-//     Response.json()
-// })  
-// .catch((err) => {
-//     console.log("ERROR=",err)
-// })
-
-
-// ############JAVSCRIPT RIVISION#########################
+// ############################   JAVSCRIPT RIVISION   #########################
 
 //   If
 
@@ -211,6 +176,51 @@
 // let arr =[1,2,4,5,6,7,8,9,10];
 // let splice = arr.splice(3,5);
 // console.log (splice);
+
+
+// map() 
+
+// Purpose: Array ke har element par function apply karke naya array return
+
+// let nums = [1, 2, 3];
+// let squares = nums.map(n => n * n);
+// console.log(squares); // [1, 4, 9]
+
+
+
+// filter() 
+
+// Purpose: Array ke selected elements filter karke naya array return
+
+// let nums = [1, 2, 3, 4, 5];
+// let even = nums.filter(n => n % 2 === 0);
+// console.log(even); // [2, 4]
+
+//  reduce() 
+
+// Purpose: Array ke sab elements ko combine karke single value return
+
+// let nums = [1, 2, 3, 4];
+// let sum = nums.reduce((acc, curr) => acc + curr, 0);
+// console.log(sum); // 10
+
+
+//  forEach()
+
+// Purpose: Array ke har element pe function run karna, return nahi karta
+
+// let nums = [1, 2, 3];
+// nums.forEach(n => console.log(n * 2));
+// // 2, 4, 6
+
+
+//  find()
+
+// Purpose: Array me pehla element jo condition satisfy kare, return
+
+// let nums = [1, 2, 3, 4];
+// let firstEven = nums.find(n => n % 2 === 0);
+// console.log(firstEven); // 2
    
 
 
@@ -520,12 +530,152 @@
 
 // exaple : 3   adult or not
 
-function adult(age) {
-   if (age>=18) {
-      return("YOU ARE ADULT")
-   } else {
-      return ("YOU ARE NOT ADULT")
-   }
-}
+// function adult(age) {
+//    if (age>=18) {
+//       return("YOU ARE ADULT")
+//    } else {
+//       return ("YOU ARE NOT ADULT")
+//    }
+// }
 
-console.log (adult(22))
+// console.log (adult(22))
+
+
+//////////////////////// SCOPES //////////////////////////////
+
+// 1) function scope 
+// Variables declared inside a function./
+
+// function hello (a,b) {
+//    let sum = a+b ;        <=  this is function scope
+//    console.log (sum)
+// }
+//  hello (5,5);
+
+
+
+// 2)  block scope
+
+// 3)  Lexical scope     
+  
+////////////////////////////////  function expression  //////////////////////////////
+
+// let sum = function (a,b) {
+//    return a+b 
+// }
+
+// console.log(sum(5,4))
+
+
+///////////////////////////   HIGER  ORDER FUNCTION  /////////////////////////
+//  Jo function, function ko call kare ya accept kare = Higher Order Function
+
+// function sayHi() {
+//   console.log("Hi");
+// }
+
+// function callMe(fn) {
+//   fn();
+// }
+
+// callMe(sayHi);
+
+
+////////////////////////////////////   ARROW FUNCTION //////////////////////////////////////////////////
+
+// Q1) 
+
+//  const  sum = (a,b) => {
+//    return a+b
+// }
+// console.log(sum (5,5));
+
+
+////////////////ARROW FUCTION IMPLICT RETURN /////////////
+// Q: Write an arrow function to add two numbers.
+
+// const sum = (a,b)=> a+b;
+// console.log(sum(2,4))
+
+// Q: Write an arrow function to square a number
+
+// const square =(a) => a*a
+// console.log(square(5))
+
+
+// Q: Write an arrow function that prints “Hello
+
+// let say =() => console.log("hello");
+
+// say ();
+
+
+
+
+//////////////////////     this  in javscript   ///////////////////
+ 
+
+// let saish = {
+//   class: "BE",
+//   RollNo: 32,
+//   Maths: 45,
+//   science: 56,
+//   Bio: 45,
+//   Physics: 55,
+
+//   get avg() {
+//     let average = (this.Maths + this.science + this.Bio + this.Physics) / 4;
+//     console.log(average);
+//   }
+// };
+
+// saish.avg ()
+
+
+
+
+///////////////////////////// TRY AND CATCH //////////////////////
+ 
+// try → risky code
+// catch → error pakad ke message ya alternative action dikhaye
+
+// ex 1)
+// try {
+//   let result = 10 / 0;
+//   console.log(result);
+// } catch (err) {
+//   console.log("Something went wrong:", err);
+// }
+
+// ex 2 )
+
+// try {
+//    let a = 5 
+//    let b = 10
+//    if(a%2===0){
+//       console.log(i)
+//    } else {
+//       console.log(even)
+//    }
+// }  catch (err) {
+//    console.log(" something wrong "+ err)
+// }
+
+
+
+//////////////////// SetTimeout  Function////////////////////
+
+// setTimeout ( () =>{
+//    console.log("HeloW !!")
+// },4000 );
+
+
+// ex 2)
+
+// setTimeout (() => {
+//    console.log("saishhhhhh")
+// },6000);
+
+
+
+// ########################################  D  O  M  #########################################
