@@ -1,5 +1,3 @@
-
-
 // ############################   JAVSCRIPT RIVISION   #########################
 
 //   If
@@ -679,3 +677,35 @@
 
 
 // ########################################  D  O  M  #########################################
+
+// SELECTING Element 
+// isme jitne bhi he o sab ayege (ex p ko id se call kiya to sab p ayege 
+
+// 1) By ID 
+
+// document.getElementById("....")
+
+// === sare property niklne ke liye 
+// console.dir(document.getElementById("..."))
+
+// 2)  By ClassName
+
+// document.getElementsByClassName("....")
+
+
+// 3) document.getElementsByTagName("...")
+
+
+// 4)  Querry Selector 
+
+// document.querySelector("..")  == select the first Element
+
+//  document.querySelector("#...")  == select the first Element by ID
+
+//  document.querySelector(".")  == select the first Element  by class
+
+// document.querySelectorAll("....") == for all element
+
+
+
+// innerText ==HTML element ke andar ka visible text change ya read karne ke kaam aata hai.
