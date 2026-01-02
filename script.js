@@ -696,6 +696,8 @@
 // 3) document.getElementsByTagName("...")
 
 
+
+
 // 4)  Querry Selector 
 
 // document.querySelector("..")  == select the first Element
@@ -708,4 +710,10 @@
 
 
 
-// innerText ==HTML element ke andar ka visible text change ya read karne ke kaam aata hai.
+// 5 ) innerText == HTML element ke andar ka visible text change ya read karne ke kaam aata hai.
+// 6 )  textContent == textContent DOM element ke andar ka poora text hota hai
+// 7) innerHTML == innerHTML element ke andar ka poora HTML code (tags + text) deta hai
+// ya phir usse replace karta hai.
+
+
+
