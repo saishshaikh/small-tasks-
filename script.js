@@ -717,3 +717,106 @@
 
 
 
+// ########################## DOM NAVIGATION ####################
+
+
+
+// html code for reference
+
+// 
+// <div class="container">
+
+//   <h1>Title</h1>
+//   <ul>
+//     <li>Item 1</li>
+//     <li class="active">Item 2</li>
+//     <li>Item 3</li>
+//   </ul>
+// </div>
+// 
+
+
+
+
+// // 1) Move UP (Parent) ///
+
+
+// const activeitem = document.querySelector(".active");
+// console.log(activeitem.parentElement);
+
+// // Output: <ul>...</ul>
+
+// console.log(activeItem.parentElement.parentElement);
+// // Output: <div class="container">...</div>
+
+
+// 2)Move DOWN (Children //
+
+// const ul = activeitem.parentElement;
+
+// console.log(ul.children); 
+// // Output: HTMLCollection [li, li, li]
+
+// console.log(ul.firstElementChild); 
+// // Output: <li>Item 1</li>
+
+// console.log(ul.lastElementChild); 
+// // Output: <li>Item 3</li>
+
+
+// 3) Move SIDEWAYS (Siblings)///
+
+// console.log(activeitem.previousElementSibling);
+// // Output: <li>Item 1</li>
+
+// console.log(activeitem.nextElementSibling);
+// // Output: <li>Item 3</li>
+
+
+// ##############   ADDING ELEMENT ###########
+// ###############  REMOVE ELEMENT ############
+
+
+
+// ######################## DOM EVENTS ###################
+
+// 1) onclick 
+
+// const buttonn = document.getElementById("btn");
+
+// btn.onclick = () => {
+//   console.log("Button CLICK!!");
+// };
+
+// method 2 
+
+// const buttonn= document.querySelector(".btn");
+
+// btn.onclick = () => {
+//   console.log("Button CLICK!!");
+// };
+
+
+// method 3   u can uses any func
+
+// const button = document.getElementById("btn");
+// button.onclick = function () {
+//    console. log ('hello');
+// }
+
+
+// for multiple buttons //
+
+let btns = document.querySelectorAll(".btn");
+
+for (let btn of btns) {   
+   btn.onclick = sayHello; 
+}
+
+function sayHello() {
+   console.log("Hello!");
+}
+
+
+
+
