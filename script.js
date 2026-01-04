@@ -807,16 +807,270 @@
 
 // for multiple buttons //
 
-let btns = document.querySelectorAll(".btn");
+// let btns = document.querySelectorAll(".btn");
 
-for (let btn of btns) {   
-   btn.onclick = sayHello; 
+// for (let btn of btns) {   
+//    btn.onclick = sayHello; 
+// }
+
+// function sayHello() {
+//    console.log("Hello!");
+// }
+
+// 2) Onmousenter 
+
+// const button = document.getElementById("btn");
+// button.onmouseenter = () => (
+//    console.log ("BUTTON WAS CLICKED!!")
+// )
+
+
+// 3) EvEN LISTENER //
+
+//  1 ) addEventListener
+
+
+// Example: Button click using event + callback
+ 
+// const btn = document.getElementById("btn");
+// btn.addEventListener("click",function() {
+//    console.log("BUTTON CLICKED!!");
+// });
+
+
+
+
+// const btn = document.getElementById("btn");
+// const input = document.getElementById("nameInput");;
+// btn.addEventListener("click",function() {
+//    console.log("BUTTON CLICKED!!"+ input.value);
+// });
+
+
+
+
+
+// const btn = document.getElementById("btn");
+
+// btn.addEventListener("click", () => {
+//   alert("Button clicked!");
+// });
+
+
+
+
+// const btn = document.getElementById("btn");
+// const input = document.getElementById("nameInput");
+
+// btn.addEventListener("click", () => {
+//   console.log("Hello " + input.value);
+// });
+
+
+// THIS IN EVEN LISTENER//
+
+// const btn = document.getElementById("btn");
+// btn.addEventListener ("click", function() {
+//    console.log(this)
+// this.style.backgroundColor = "pink";
+
+// });
+
+
+//  FORM EVENT   //
+
+// const form = document.getElementById("myForm");
+
+// form.addEventListener("submit", function (event) {
+//   event.preventDefault();
+//   console.log("FORM SUBMITTED !!");
+  
+// });
+
+
+
+  // SHOW  user input also //
+
+// const form = document.getElementById("myForm");
+// const input = document.getElementById("userInput");
+
+// form.addEventListener("submit", function (event) {
+//   event.preventDefault();
+//    console.log(input.value);
+//   console.log("FORM SUBMITTED !!");
+  
+// });   
+
+
+
+// ############ EVENT BUBBLING ##############
+
+
+// const parent = document.getElementById("parent");
+// const child = document.getElementById("child");
+
+// parent.addEventListener("click", () => {
+//   console.log("Parent clicked");
+// });
+
+// child.addEventListener("click", () => {
+//   console.log("Child clicked");
+// });
+
+// // here problm is when click me button then output comes child  first and then parent 
+
+// solutaion on tht ==>
+
+// child.addEventListener("click", (event) => {
+//   console.log("Child clicked");
+//   event.stopPropagation(); // stops bubbling
+// });
+
+
+
+// ###############  JS Call Stack  ################
+
+// function first () {
+//   two ();
+// }
+// function two () {
+//   three();
+// }
+// function three () {
+//   console.log("hellow saish");
+// }
+// first();
+
+
+// ################## BREAKPOINTS #######################
+
+// let a = 5;
+// let b = 10;
+
+// debugger;   // yahin code ruk jaayega thts called  breakpoint
+
+// let sum = a + b;
+// console.log(sum);
+
+
+
+
+// function first() {
+//   two();
+// }
+
+// function two() {
+//   debugger;
+//   three();
+// }
+
+// function three() {
+//   console.log("hello saish");
+// }
+
+// first();
+
+
+
+// ###################### JavaScript Promises ###################
+// Promise ek object hota hai jo future me koi value milegi ya error aayega — ye batata hai.
+
+
+// const promise = new Promise((resolve, reject) => {
+//   resolve("Success!");
+// });
+
+// promise.then(result => {
+//   console.log(result);
+// });
+// // Output: "Success!"
+
+
+// Reject example
+
+// const promise = new Promise((resolve, reject) => {
+//   reject("Error!");
+// });
+
+
+//  promise .then(res => console.log(res))
+// promise.catch(err => console.log(err));
+
+
+
+// Example: then & catch 
+
+// const promise = new Promise((resolve, reject) => {
+//   let pass = true;
+//   if (pass) {
+//     resolve("YOU PASSED !");
+//   } else {
+//     reject("YOU FAILED !");
+//   }
+// });
+
+// promise.then(result => {  
+//   console.log(result);
+// })
+// promise.catch(error => {
+//   console.log(error);
+// });
+
+// note == Promise resolve hua => then, reject hua =>catch
+
+// #################### ASYNC AWAIT  ##########################
+
+// function sayHello() {
+//   return new Promise(resolve => {
+//     setTimeout(() => {
+//       resolve("Hello Async!");
+//     }, 4000);
+//   });
+// }
+
+// async function greet() {
+//   const message = await sayHello(); // wait for promise to resolve
+//   console.log(message);
+// }
+
+// greet();
+
+
+
+
+
+
+// Promise for each step
+function boilWater() {
+  return new Promise(resolve => {
+    setTimeout(() => resolve(" Water boiled"), 1000);
+  });
 }
 
-function sayHello() {
-   console.log("Hello!");
+function brewCoffee() {
+  return new Promise(resolve => {
+    setTimeout(() => resolve(" Coffee brewed"), 1000);
+  });
 }
 
+function addMilk() {
+  return new Promise(resolve => {
+    setTimeout(() => resolve(" Milk added"), 500);
+  });
+}
 
+// Async function to do all steps
+async function makeCoffee() {
+  const step1 = await boilWater();
+  console.log(step1);
 
+  const step2 = await brewCoffee();
+  console.log(step2);
 
+  const step3 = await addMilk();
+  console.log(step3);
+
+  console.log(" Coffee ready!");
+}
+
+makeCoffee();

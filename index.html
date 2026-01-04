@@ -1,47 +1,38 @@
-<!--
+ <!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>onClick event</title>
-  <input style="justify-content: center;" placeholder="ENTER UR NAME"> <button id="btn">Click Me</button> </input>
+  <title>form event</title>
 </head>
-<body>
-    <script src="script.js"></script>
 
+<body>
+  <form id="myForm">
+    <input id="userInput" type="text" placeholder="Enter something" />
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
 </body>
 </html>
- -->
+-->
 
 
- <!--  for multiple buttons-->
-   
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multiple Buttons Example</title>
-  <style>
-    .btn {
-      padding: 10px 20px;
-      margin: 5px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
+  <title>EVENT BUBBLING</title>
 </head>
+
 <body>
+  <div id="parent" style="padding: 20px; background: lightblue;">
+    Parent Div
+    <button id="child">Click Me</button>
+  </div>
 
-  <h1>Click Any Button</h1>
-
-  <button class="btn">Button 1</button>
-  <button class="btn">Button 2</button>
-  <button class="btn">Button 3</button>
-
-  <!-- External JS file -->
   <script src="script.js"></script>
-
 </body>
 </html>
