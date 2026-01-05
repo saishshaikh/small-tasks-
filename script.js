@@ -1041,36 +1041,43 @@
 
 
 // Promise for each step
-function boilWater() {
-  return new Promise(resolve => {
-    setTimeout(() => resolve(" Water boiled"), 1000);
-  });
-}
+// function boilWater() {
+//   return new Promise(resolve => {
+//     setTimeout(() => resolve(" Water boiled"), 1000);
+//   });
+// }
 
-function brewCoffee() {
-  return new Promise(resolve => {
-    setTimeout(() => resolve(" Coffee brewed"), 1000);
-  });
-}
+// function brewCoffee() {
+//   return new Promise(resolve => {
+//     setTimeout(() => resolve(" Coffee brewed"), 1000);
+//   });
+// }
 
-function addMilk() {
-  return new Promise(resolve => {
-    setTimeout(() => resolve(" Milk added"), 500);
-  });
-}
+// function addMilk() {
+//   return new Promise(resolve => {
+//     setTimeout(() => resolve(" Milk added"), 500);
+//   });
+// }
 
-// Async function to do all steps
-async function makeCoffee() {
-  const step1 = await boilWater();
-  console.log(step1);
+// // Async function to do all steps
+// async function makeCoffee() {
+//   const step1 = await boilWater();
+//   console.log(step1);
 
-  const step2 = await brewCoffee();
-  console.log(step2);
+//   const step2 = await brewCoffee();
+//   console.log(step2);
 
-  const step3 = await addMilk();
-  console.log(step3);
+//   const step3 = await addMilk();
+//   console.log(step3);
 
-  console.log(" Coffee ready!");
-}
+//   console.log(" Coffee ready!");
+// }
 
-makeCoffee();
+// makeCoffee();
+
+
+
+// #######################  FETCH API  ##########################
+
+
+
